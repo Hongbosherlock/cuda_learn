@@ -1,0 +1,19 @@
+[build-system]
+requires = [ "wheel", "torch"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cuda_reduce"
+version = "0.1.0"
+description = "CUDA reduce sum with PyTorch extension"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "torch>=1.8.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "numpy"]
+
+[tool.setuptools]
+packages = []
