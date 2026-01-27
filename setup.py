@@ -50,6 +50,7 @@ setup(
                 'kernel/reduction/reduce_sum.cu',
                 'kernel/batch_reduction/batch_reduce.cu',
                 'kernel/quant/per_token_quant_fp8.cu',
+                'kernel/softmax/online_softmax.cu',
             ],
             extra_compile_args={
                 'nvcc': [
